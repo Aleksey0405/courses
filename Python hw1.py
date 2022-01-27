@@ -73,3 +73,5 @@ print(division)
 rest = a%b
 print(rest)
 
+#Task17
+print((7+12) ** 3 + 7 * 4 - 44 / 2 ** 4)
