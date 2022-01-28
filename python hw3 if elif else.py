@@ -72,7 +72,7 @@ if item_4:
 else:
     print("Переменная item_4 = ", item_4)
 #  29. Создать переменную currency_convertor со значением item_2
-
+currency_conventor = item_2
 #  30. Сделать if в котором будет условие: если currency_convertor, то выполнять следующие шаги задания, иначе, вывести в консоль (“Переменная currency_convertor = ”, item_3)
 #  31. Внутри if currency_convertor сделать следующие If условия :
 #                     31.1 Создать переменную currency_usd со значением usd_item
@@ -84,3 +84,26 @@ else:
 #                     31.6 Сделать elif с остальными валютами
 # …
 #                     31.7 Последним оставить else, при выполнений которого в консоль выведется (“Unknow currency”)
+
+input_currency = input('Enter currency')
+if currency_conventor:
+    target_currency_amount = 50
+    currency_result = 0
+
+    if input_currency == 'eur':
+        currency_result = target_currency_amount / usd_eur_rate
+        print(target_currency_amount, eur_item, '=', currency_result, usd_item)
+    elif input_currency == 'uah':
+        currency_result = target_currency_amount / usd_uah_rate
+        print(target_currency_amount, uah_item, '=', currency_result, usd_item)
+    elif input_currency == 'chf':
+        currency_result = target_currency_amount / usd_chf_rate
+        print(target_currency_amount, chf_item, '=', currency_result, usd_item)
+    elif input_currency == 'rub':
+        currency_result = target_currency_amount / usd_rub_rate
+        print(target_currency_amount, rub_item, '=', currency_result, usd_item)
+    elif input_currency == 'byn':
+        currency_result = target_currency_amount / usd_byn_rate
+        print(target_currency_amount, byn_item, '=', currency_result, usd_item)
+    else:
+        print("Unknown currency")    
